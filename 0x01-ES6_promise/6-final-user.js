@@ -10,6 +10,7 @@ export default async function handleProfileSignup(firstName, lastName, fileName)
     status: 'pending',
     value: '',
   };
+  
   try {
     const signup = await signUpUser(firstName, lastName);
     user.status = 'fulfilled';
